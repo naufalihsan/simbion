@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'donor.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="donor-form">
+        <div class="donor-header">
+            <img class="donor-img" src="https://image.ibb.co/bGHKg7/image.png" width="120" height="36">
+            <p class="donor-title">Register</p>
+        </div>
+        <div>
+            <div class="row donor-auth">
+                <a class="link-to" href="{% url 'register-donor' %}">
+                    <div class="btn btn-primary">Sebagai Donatur</div>
+                </a>
+                <a class="link-to" href="{% url 'register-student' %}">
+                    <div class="btn btn-primary">Sebagai Mahasiswa</div>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

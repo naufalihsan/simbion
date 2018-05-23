@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'landingpage.css' %}">
+{% endblock %}
+
+{% block header %}
+    {% include 'partials/header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                           Beasiswa Mitsubishi
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Mitsubishi UFJ Scholarship 2018
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by
+                        <a href="#">Mitshubishi Indonesia</a>
+                        on September 24, 2018</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Beasiswa Yayasan Al-Azhar
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Beasiswa al-azhar di Cairo,Mesir
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by
+                        <a href="#">Start Bootstrap</a>
+                        on September 18, 2018</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+{% endblock %}
+
+{% block footer %}
+    {% include 'partials/footer.html' %}
+{% endblock %}
+

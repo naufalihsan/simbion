@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="login-form">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="bg-danger text-white" style="margin-top: 20px;padding-left: 100px;">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        <div class="login-header">
+            <img class="login-img" src="https://image.ibb.co/bGHKg7/image.png" width="120" height="36">
+            <p class="login-title">Masuk</p>
+            <p class="login-greeting">Masuk dengan Akun Simbion Anda</p>
+        </div>
+        <div>
+            <form action="{% url 'login-auth' %}" method="POST">
+                {% csrf_token %}
+                <div class="skema-form">
+                    <label class="form-label" for="form-username">Username</label>
+                    <input type="text" class="form-control" id="form-username" placeholder="Enter username"
+                           name="username">
+                </div>
+                <div class="skema-form">
+                    <label class="form-label" for="form-password">Password</label>
+                    <input type="password" class="form-control" id="form-password" placeholder="Password"
+                           name="password">
+                </div>
+                <div class="row login-auth">
+                    <a class="create-acc col-6 col-sm-6 col-md-6 col-lg-6" href="{% url 'register'%}">
+                        <p>Buat akun</p>
+                    </a>
+                    <button class="btn btn-primary float-right" type="submit">LOG IN</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
+

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/list_beasiswa.css' %}">
+{% endblock %}
+
+{% block content %}
+    <html>
+    <meta charset="utf-8">
+    <section id="list_beasiswa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1>List Beasiswa Untuk Ditolak atau Diterima</h1>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>No Urut Skema</th>  
+                        <th>Kode Skema</th>
+                        <th>Waktu Penutupan</th>
+                        <th>Status</th>
+                        <th>Jumlah Pendaftar</th>
+                        <th>Detail</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="kode_skema">20172018</td>
+                            <td>30 Mei 2018</td>
+                            <td>Ditutup</td>
+                            <td>20 Orang</td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" href="/penerimaan_beasiswa/">Lihat</a>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+

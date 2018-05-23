@@ -1,0 +1,69 @@
+body {
+    background-color: gainsboro;
+    background-image: url("https://image.freepik.com/free-vector/grey-polygonal-background_1055-3164.jpg");
+}
+
+#donor-form {
+    margin: 100px 25% 30px 25%;
+    width: 650px;
+    height: 300px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+
+}
+
+.donor-img {
+    margin-bottom: 20px;
+}
+
+.donor-label {
+    font-size: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.donor-header {
+    padding: 50px 0 10px 40px;
+}
+
+.donor-title {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.btn {
+    margin: 20px 5px 0 55px;
+    font-weight: 600;
+}
+
+.link-to {
+    color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+    #donor-form {
+        margin: 50px 140px 0 140px;
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #donor-form {
+        margin: 0;
+        padding: 20px 10px 0 10px;
+        width: 420px;
+        height: 812px;
+    }
+
+    .donor-img {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        margin: 20px 5px 0 50px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

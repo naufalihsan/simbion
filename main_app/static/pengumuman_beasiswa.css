@@ -1,0 +1,41 @@
+body {
+    background-color: gainsboro;
+    background-image: url("https://image.freepik.com/free-vector/grey-polygonal-background_1055-3164.jpg");
+}
+
+#form_skema {
+    padding: 70px;
+}
+
+.skema-form {
+    padding: 7px;
+}
+
+
+@media screen and (max-width: 420px) {
+    #login-form {
+        margin: 0;
+        padding: 20px 10px 0 10px;
+        width: 420px;
+        height: 812px;
+    }
+
+    .login-img {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        width: 60%;
+    }
+
+    .create-acc {
+        font-size: 12px;
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+
+    .btn {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

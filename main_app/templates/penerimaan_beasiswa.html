@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/penerimaan_beasiswa.css' %}">
+{% endblock %}
+
+{% block content %}
+    <html>
+    <meta charset="utf-8">
+    <section id="list_beasiswa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1>List Pendafar Beasiswa (Nama Beasiswa) </h1>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>No Urut Pendaftar</th>  
+                        <th>Nama</th>
+                        <th>NPM</th>
+                        <th>Waktu Daftar</th>
+                        <th>Status Terima</th>
+                        <th>Pilih</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="nama_pendaftar">baharudin</td>
+                            <td>1606862138</td>
+                            <td>1 Februari 2018</td>
+                            <td>Tidak Aktif</td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" href="#popup1">Terima</a>
+                                <a class="btn btn-primary btn-sm" href="#popup2">Tolak</a>
+                            </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td class="nama_pendaftar">arif yudoyono</td>
+                          <td>2141242321</td>
+                          <td>20 Januari 2018</td>
+                          <td>Aktif</td>
+                          <td>
+                              <a class="btn btn-primary btn-sm" href="#popup1">Terima</a>
+                              <a class="btn btn-primary btn-sm" href="#popup2">Tolak</a>
+                          </td>
+                      </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

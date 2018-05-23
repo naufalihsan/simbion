@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/daftar_beasiswa.css' %}">
+{% endblock %}
+
+{% block content %}
+    <html>
+    <meta charset="utf-8">
+    <section id="daftar_beasiswa">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h1>DAFTAR BEASISWA</h1>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Beasiswa</th>
+                        <th>Batas Pendaftaran</th>
+                        <th>Status</th>
+                        <th>Jumlah Pendaftar</th>
+                        <th>Detail</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="nama_beasiswa">Beasiswa Fasilkom</td>
+                        <td>30 Mei 2018</td>
+                        <td>Aktif</td>
+                        <td>20 Orang</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" href="#popup1">VIEW</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Beasiswa Silicon Valley</td>
+                        <td>31 Agustus 2018</td>
+                        <td>Aktif</td>
+                        <td>120 Orang</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" href="#popup2">VIEW</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Beasiswa Fasilkom - #B1204</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            Beasiswa Tugas Akhir dibuat oleh CS1606
+                            <hr>
+                            <p>Beasiswa yang membantu keuangan anda dalam mengerjakan Tugas Akhir/Skripsi</p>
+                            <p>Syarat Beasiswa: IPK > 3.25</p>
+                            <a class="btn btn-primary btn-sm">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="popup2" class="overlay">
+                    <div class="popup">
+                        <h2>Beasiswa Silicon Valley - #B1205</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            Beasiswa Bantuan Belajar dibuat oleh SC1045
+                            <hr>
+                            <p>Beasiswa yang membantu anda dalam menjalani kuliah di Fasilkom</p>
+                            <p>Syarat Beasiswa: Toefl 500</p>
+                            <a class="btn btn-primary btn-sm">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+

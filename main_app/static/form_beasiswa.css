@@ -1,0 +1,88 @@
+body {
+  background-color: gainsboro;
+  background-image: url("https://image.ibb.co/dUm0g7/2862.jpg");
+}
+
+#register-beasiswa-form {
+  margin: 100px 22% 30px 22%;
+  width: 750px;
+  height: 1285px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+
+}
+
+.register-img {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 10px;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.form-control {
+  width: 80%;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #dddddd;
+  margin-left: 10%;
+}
+
+.register-header {
+  padding: 50px 0 10px 40px;
+}
+
+.register-title {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.register-greeting {
+  font-size: 14px;
+}
+
+.btn {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-right: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  #register-beasiswa-form {
+      margin: 20px 185px 0 185px;
+      width: 450px;
+      height: 500px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #register-beasiswa-form {
+      margin: 0;
+      padding: 20px 10px 0 10px;
+      width: 420px;
+      height: 812px;
+  }
+
+  .register-img {
+      margin-bottom: 10px;
+  }
+
+  .form-control {
+      width: 60%;
+  }
+
+  .create-acc {
+      font-size: 12px;
+      margin-left: 40px;
+      margin-right: 0px;
+  }
+
+  .btn {
+      font-size: 12px;
+      font-weight: 600;
+  }
+}

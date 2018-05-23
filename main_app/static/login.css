@@ -1,0 +1,95 @@
+body {
+    background-color: gainsboro;
+    background-image: url("https://image.freepik.com/free-vector/grey-polygonal-background_1055-3164.jpg");
+}
+
+#login-form {
+    margin: 100px 35% 30px 35%;
+    width: 450px;
+    height: 510px;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.43);
+
+}
+
+.login-img {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 80%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #dddddd;
+    margin-left: 10%;
+}
+
+.login-header {
+    padding: 50px 0 10px 40px;
+}
+
+.login-title {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.login-greeting {
+    font-size: 14px;
+}
+
+.login-auth {
+    margin-top: 50px;
+}
+
+.create-acc {
+    margin-left: 45px;
+    margin-right: 48px;
+}
+
+.btn {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    #login-form {
+        margin: 20px 185px 0 185px;
+        width: 450px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #login-form {
+        margin: 0;
+        padding: 20px 10px 0 10px;
+        width: 420px;
+        height: 812px;
+    }
+
+    .login-img {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        width: 60%;
+    }
+
+    .create-acc {
+        font-size: 12px;
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+
+    .btn {
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
